@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+
+<SplitPane dividerPositions="0.5" orientation="HORIZONTAL" xmlns:fx="http://javafx.com/fxml" fx:controller="game.gui.tryGameController">
+   <items>
+      <StackPane fx:id="leftPane">
+         <children>
+            <ImageView>
+               <image>
+                  <Image url=""/>
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <StackPane fx:id="rightPane">
+         <children>
+            <ImageView>
+               <image>
+                  <Image url=""/>
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+   </items>
+</SplitPane>

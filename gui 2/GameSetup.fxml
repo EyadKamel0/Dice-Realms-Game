@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="791.0" prefWidth="1367.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameSetupController">
+   <children>
+      <ImageView fitHeight="968.0" fitWidth="1640.0" layoutX="-9.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../../Downloads/windows-xp-bliss-4k-lu-1920x1080.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logoImage" fitHeight="531.0" fitWidth="1125.0" layoutX="515.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-76.0" AnchorPane.leftAnchor="515.0" AnchorPane.rightAnchor="-147.19732666015625" AnchorPane.topAnchor="336.0">
+         <image>
+            <Image url="@../../../../Downloads/Screenshot%202024-05-30%20031816.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="inputField" layoutX="1100.0" layoutY="448.0" opacity="0.0" prefHeight="19.0" prefWidth="265.0" />
+      <Label fx:id="label1" layoutX="700.0" layoutY="418.0" prefHeight="25.0" prefWidth="109.0" text="Ahlan ya bashaa&gt;" textFill="#f7f5f5" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="802.0" layoutY="421.0" prefHeight="19.0" prefWidth="331.0" text="lw 3ayz tl3b m3 sa7bak doos 1 w lel calltone deh dos 2 &gt;" textFill="#f7f5f5" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="label3" layoutX="1128.0" layoutY="421.0" prefHeight="19.0" prefWidth="220.0" text="damy t2el sa7 3aref et2aletly kter :( &gt;" textFill="#f7f5f5" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="label4" layoutX="518.0" layoutY="451.0" prefHeight="19.0" prefWidth="582.0" text="el mohem el mrady bgd lw 3ayz tl3b m3 sa7bak doos 1 w llw shayef nafsak gamed w  ad el Ai dos 2&gt;" textFill="#f7f5f5" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+    	  </Label>
+      <Label fx:id="errorLabel" layoutX="544.0" layoutY="570.0" prefHeight="44.0" prefWidth="478.0" text="Blash fazlaka w da5al la 1 la 2!!!" textFill="red" visible="false">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="player1Label" layoutX="607.0" layoutY="685.0" prefHeight="38.0" prefWidth="120.0" text="Player 1 Name :" textFill="#f3f1f1" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="player1Name" layoutX="721.0" layoutY="691.0" opacity="0.0" prefHeight="25.0" prefWidth="198.0" />
+      <Label fx:id="player2Label" layoutX="1005.0" layoutY="693.0" prefHeight="21.0" prefWidth="120.0" text="Player 2 Name : " textFill="#f3f1f1" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="player2Name" layoutX="1134.0" layoutY="691.0" opacity="0.0" prefHeight="25.0" prefWidth="181.0" />
+      <Button fx:id="nextButton" layoutX="1353.0" layoutY="814.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="154.0" text="Next!" visible="false" />
+      <MediaView fitHeight="200.0" fitWidth="200.0" layoutX="431.0" layoutY="455.0" />
+      <MediaView fitHeight="200.0" fitWidth="200.0" layoutX="946.0" layoutY="470.0" />
+   </children>
+</AnchorPane>

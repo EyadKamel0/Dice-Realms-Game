@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.GameBoardController">
+   <children>
+      <StackPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="rollButton" mnemonicParsing="false" onAction="#roll" prefHeight="26.0" prefWidth="81.0" text="Roll" translateY="170.0" />
+            <ImageView fx:id="diceImage" fitHeight="33.0" fitWidth="33.0" onMouseClicked="#handleDiceClick" onMouseEntered="#handleDiceHoverEnter" onMouseExited="#handleDiceHoverExit" pickOnBounds="true" preserveRatio="true" translateX="-25.0">
+               <image>
+                  <Image url="@../../../resources/images/dice1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="diceImage1" fitHeight="34.0" fitWidth="33.0" onMouseClicked="#handleDiceClick" onMouseEntered="#handleDiceHoverEnter" onMouseExited="#handleDiceHoverExit" pickOnBounds="true" preserveRatio="true" translateX="25.0">
+               <image>
+                  <Image url="@../../../resources/images/dice1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="diceImage2" fitHeight="33.0" fitWidth="33.0" onMouseClicked="#handleDiceClick" onMouseEntered="#handleDiceHoverEnter" onMouseExited="#handleDiceHoverExit" pickOnBounds="true" preserveRatio="true" translateX="-25.0" translateY="50.0">
+               <image>
+                  <Image url="@../../../resources/images/dice1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="diceImage3" fitHeight="33.0" fitWidth="33.0" onMouseClicked="#handleDiceClick" onMouseEntered="#handleDiceHoverEnter" onMouseExited="#handleDiceHoverExit" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="50.0">
+               <image>
+                  <Image url="@../../../resources/images/dice1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="diceImage4" fitHeight="46.0" fitWidth="33.0" onMouseClicked="#handleDiceClick" onMouseEntered="#handleDiceHoverEnter" onMouseExited="#handleDiceHoverExit" pickOnBounds="true" preserveRatio="true" translateX="-25.0" translateY="100.0">
+               <image>
+                  <Image url="@../../../resources/images/dice1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="diceImage5" fitHeight="33.0" fitWidth="33.0" onMouseClicked="#handleDiceClick" onMouseEntered="#handleDiceHoverEnter" onMouseExited="#handleDiceHoverExit" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="100.0">
+               <image>
+                  <Image url="@../../../resources/images/dice1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="nextRound" mnemonicParsing="false" onAction="#switchScene" text="Button" translateX="200.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" translateX="80.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" translateX="-80.0" />
+            <Separator maxWidth="160.0" translateY="-50.0" />
+            <Label text="Forgotten Realm" translateY="-170.0" />
+            <HBox fx:id="forgottenRealmBox" alignment="CENTER" maxHeight="150.0" maxWidth="160.0" prefHeight="50.0" prefWidth="200.0" spacing="5" translateY="-125.0" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
